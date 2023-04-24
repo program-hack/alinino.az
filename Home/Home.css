@@ -1,0 +1,483 @@
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 4px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1534px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    background: white;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 73%;
+}
+
+.search {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    max-width: 750px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+
+.search input {
+    width: 700px;
+    outline: 0;
+    border: none;
+}
+
+.search button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.menu button {
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    font-size: 27px;
+    padding-top: 5px;
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.1s linear;
+    border-radius: 2px;
+}
+
+.menu button:active {
+    scale: 1.1;
+}
+
+.body {
+    max-width: 1534px;
+    min-height: 603px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    padding-left: 250px;
+    padding-right: 85px;
+    transform: translateX(-100%);
+    transition: 1.3s linear;
+    scale: 0;
+    z-index: 999;
+    margin-top: 111px;
+}
+
+.pop-up-content {
+    margin-left: -300px;
+}
+
+.open-body {
+    scale: 1;
+    transform: translateX(0%);
+}
+
+.pop-up-menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding-left: 120px;
+    margin-top: -10px;
+}
+
+.pop-up-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-right: 0.1px solid rgb(171, 171, 171);
+    border-bottom: 0.1px solid rgb(171, 171, 171);
+}
+
+.pop-up-link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    max-width: 100px;
+    text-align: center;
+    margin: 25px 65px;
+    transition: 0.3s linear;
+}
+
+.pop-up-link:hover {
+    color: #dc0708;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 40px;
+    margin-top: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.pop-up-link-img {
+    width: 60%;
+    padding-bottom: 7px;
+}
+
+#pop-up-item {
+    border-right: 0;
+}
+
+#pop-up-item2 {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#pop-up-item3 {
+    border-bottom: 0;
+}
+
+.main {
+    background: rgb(239, 239, 239);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.main-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.main-block {
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-block {
+    overflow: hidden;
+    background: rgb(224, 223, 223);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.img-block img {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    width: 55%;
+    scale: 1;
+    transition: 0.3s linear;
+    border-radius: 2px;
+}
+
+.img-block img:hover {
+    scale: 1.1;
+}
+
+.main-block-first {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: block;
+    padding-top: 10px;
+}
+
+.main-block-second {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.cart-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cart-block-inner {
+    transform: translateX(100%);
+    transition: 1.3s linear;
+    scale: 0;
+    position: fixed;
+    z-index: 999;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-top: 825px;
+    max-width: 450px;
+    min-height: 603px;
+}
+
+.cart-block-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.cart-block-first {
+    border-bottom: 1px solid rgb(171, 171, 171);
+    display: flex;
+    align-items: center;
+    padding-left: 23px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 23px;
+    max-width: 100%;
+}
+
+.cart-block-first-img-block {
+    overflow: hidden;
+    max-width: 70px;
+}
+
+.cart-block-first-img-block img {
+    width: 83%;
+    scale: 1;
+    transition: 0.2s linear;
+}
+
+.cart-block-first-img-block img:hover {
+    scale: 1.1;
+}
+
+.cart-block-first-word-block {
+    text-align: left;
+}
+
+.cart-block-first-word-block span {
+    display: block;
+}
+
+.cart-block-inner-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.cart-block-inner-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.cart-block-first-block-first {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cart-block-first-block-second {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+}
+
+.cart-block-button-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.cart-block-button-block-btn {
+    width: 200px;
+    height: 43px;
+    background: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    scale: 1.1;
+    transition: 0.2s linear;
+}
+
+.cart-block-button-block-btn:active {
+    scale: 1;
+}
+
+.open-block {
+    scale: 1;
+    transform: translateY(0%);
+}
+
+.chat-block {
+    transform: translateY(100%);
+    transition: .7s linear;
+    position: fixed;
+    z-index: 999;
+    width: 20%;
+    margin-top: 277px;
+    margin-left: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
+}
+
+.chat-header {
+    padding: 10px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
+    background: rgb(178, 178, 178);
+}
+
+.chat-header-inner {
+    max-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-header-img-block {
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+}
+
+.chat-header-img-block img {
+    width: 23.5%;
+}
+
+.chat-header-img-block-first {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+.chat-header-word-block {
+    padding-top: 7px;
+}
+
+.chat-header-img-block-second {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: block;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.chat-main {
+    background: url(../images/8c98994518b575bfd8c949e91d20548b.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.chat-main-block {
+    background: rgb(224, 224, 224);
+    margin-left: 50px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 12px;
+    border-radius: 8px;
+    line-height: 21px;
+}
+
+.chat-main-block span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-main-block-span-2 {
+    color: rgb(144, 144, 144);
+    padding-top: 2px;
+    display: block;
+}
+
+.chat-main-block-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-footer {
+    background: white;
+}
+
+.chat-footer-inner {
+    max-width: 270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-footer-input-block {
+    padding: 18px 0;
+}
+
+.chat-footer-input-block input {
+    background: none;
+    outline: 0;
+    border: none;
+}
+
+.chat-footer-button-block button {
+    background: rgb(217, 217, 217);
+    border: none;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 9px;
+    font-size: 19px;
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s linear;
+}
+
+.chat-footer-button-block button:active {
+    scale: .98;
+}
+
+.chat-close {
+    position: fixed;
+    padding-left: 310px;
+}
+
+.chat-close-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.open-chat {
+    transform: translateY(0%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

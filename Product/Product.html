@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Product.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/logotype.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ali & Nino - Интернет Магазин</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="../Home/Home.html">
+                        <img src="../images/logotype.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+
+                <div class="menu">
+                    <button onclick="openPopUp()"><i class='bx bx-menu'></i></button>
+                    <button style="margin-left: 8px; margin-right: 7px;" onclick="openBlock()"><i class='bx bxs-cart'></i></button>
+                    <button onclick="openChat()"><i class='bx bxs-chat'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="body" id="body">
+            <div class="pop-up">
+                <div class="pop-up-content">
+                    <div class="close"><button onclick="closePopUp()" class="close-btn"><i class='bx bx-window-close'></i></button></div>
+                    <ul class="pop-up-menu">
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item3">
+                            <a class="pop-up-link" style="border-bottom: none;" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item3">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item3">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item3">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item3">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                        <div class="pop-up-item" id="pop-up-item2">
+                            <a class="pop-up-link" href=""><img class="pop-up-link-img" src="../images/thumb_book_icon_aze.png" alt=""> Книги на Азербайджанском языке</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-block">
+            <div class="cart-block-inner" id="block">
+                <div class="cart-block-inner-close"><button onclick="closeBlock()" class="cart-block-inner-close-btn"><i class='bx bx-window-close'></i></button></div>
+                <div class="cart-block-content">
+                    <div class="cart-block-first">
+                        <div class="cart-block-first-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="cart-block-first-word-block">
+                            <span class="cart-block-first-block-first">Konsulun Köpəyi</span>
+                            <span class="cart-block-first-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="cart-block-first">
+                        <div class="cart-block-first-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="cart-block-first-word-block">
+                            <span class="cart-block-first-block-first">Konsulun Köpəyi</span>
+                            <span class="cart-block-first-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="cart-block-first">
+                        <div class="cart-block-first-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="cart-block-first-word-block">
+                            <span class="cart-block-first-block-first">Konsulun Köpəyi</span>
+                            <span class="cart-block-first-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="cart-block-first">
+                        <div class="cart-block-first-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="cart-block-first-word-block">
+                            <span class="cart-block-first-block-first">Konsulun Köpəyi</span>
+                            <span class="cart-block-first-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-block-button-block">
+                    <button class="cart-block-button-block-btn">Оформить Заказ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="chat-inner">
+                <div class="chat-content">
+                    <div class="chat-block" id="chat">
+                        <div class="chat-close">
+                            <button class="chat-close-btn" onclick="closeChat()"><i class='bx bx-window-close'></i></button>
+                        </div>
+                        <div class="chat-header">
+                            <div class="chat-header-inner">
+                                <div class="chat-header-img-block">
+                                    <img src="../images/logotype.jpg" alt="">
+                                    <div class="chat-header-word-block">
+                                        <span class="chat-header-img-block-first">Alinino.az</span>
+                                        <span class="chat-header-img-block-second">online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-main">
+                            <div class="chat-main-block">
+                                <span>Hörmətli istifadəçi, hər hansı bir sualınız varsa, buyurun, müraciət edin. Sifariş etmək üçün məhsulun üzərindəki "SƏBƏT" işarəsinə, yaxud məhsula daxil olub "TIKLA-AL" düyməsinə basın. Gün ərzində operator sizinlə əlaqə saxlayıb sifarişinizi təsdiq edəcək.</span>
+                                <div class="chat-main-block-block">
+                                    <span class="chat-main-block-span-2">8:08</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-footer">
+                            <div class="chat-footer-inner">
+                                <div class="chat-footer-input-block">
+                                    <input type="text" placeholder="İsmarış yazın və Enter basın">
+                                </div>
+                                <div class="chat-footer-button-block">
+                                    <button><i class='bx bx-dots-vertical-rounded'></i></button>
+                                    <button style="margin-left: 5px;"><i class='bx bx-smile'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-inner">
+                <div class="main-img-block">
+                    <img class="main-img-block-img" src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                </div>
+                <div class="main-word-block">
+                    <span class="main-word-block-first">Konsulun Köpəyi</span>
+                    <span class="main-word-block-second">6.39 AZN</span>
+                    <span class="main-word-block-third">Sifarişləri Bakıya, Azərbaycanın bölgələrinə və bütün dünya ölkələrinə çatdırırıq!</span>
+                    <span class="main-word-block-third">Bakı üzrə 30 manatdan yuxarı sifarişlərdə çatdırılma pulsuzdur.</span>
+                    <span class="main-word-block-third">Operativ çatdırırıq:
+                        24 saat ərzində * sürətli çatdırılma * poçtla * "Özün götür" xidməti ilə</span>
+                    <span class="main-word-block-third">Ödəniş etmək asandır:
+                        onlayn kartla * pos-terminalla * hissə-hissə * kuryerə nəğd * MilliÖn və E-Manat terminalları ilə</span>
+                    <div class="main-word-block-word">
+                        <span class="main-word-block-fourth">“Konsulun köpəyi” adlı bu kitabda müəllifin son illərdə yazdığı
+                            hekayələri toplanıb. Nəsrdə öz üslubu, yazı tərzi olan Şərəf
+                            Yılmaz aydın, sadə dildə yazır. Yeni mövzulara müraciət eləyir,
+                            buna görə də maraqla oxunur, elə ilk cümləsindən oxucunu
+                            təsir altına ala bilir. Bu hekayələri də bir nəfəsə oxuyacağınıza</span>
+                    </div>
+                    <div class="main-word-block-input">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="main-word-block-btn">
+                        <button onclick="openBlock()">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="middle-inner">
+                <div class="middle-content">
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="middle-block-img-block">
+                            <img src="../images/large_KONSULUN_KOPEYI_qapaq.jpg" alt="">
+                        </div>
+                        <div class="middle-block-word-block">
+                            <span class="middle-block-first">Konsulun Köpəyi</span>
+                            <span class="middle-block-second">6.39 AZN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let body = document.getElementById('body');
+        let block = document.getElementById('block');
+        let chat = document.getElementById('chat');
+
+        function openPopUp() {
+            body.classList.add('open-body');
+        }
+
+        function closePopUp() {
+            body.classList.remove('open-body');
+        }
+
+        function openBlock() {
+            block.classList.add('open-block');
+        }
+
+        function closeBlock() {
+            block.classList.remove('open-block');
+        }
+
+        function openChat() {
+            chat.classList.add('open-chat');
+        }
+
+        function closeChat() {
+            chat.classList.remove('open-chat');
+        }
+    </script>
+    
+</body>
+</html>
